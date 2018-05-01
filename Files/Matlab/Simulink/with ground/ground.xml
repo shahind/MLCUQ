@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="02/16/18||00:40:15" using="Simscape Multibody Link Version 4.8" from="SolidWorks 24.4.0"/>
+<ModelUnits mass="kilogram" length="centimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Quad" uid="Quad" version="233">
+<AssemblyFile name="Quad.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Body-1" uid="Body-1" entityUid="Body*:*Default">
+<Transform>
+<Rotation>0.99997401581348233 0 -0.0072088624524101102 0 1 0 0.0072088624524101102 0 0.99997401581348233</Rotation>
+<Translation>0.14028694598234248 0.70862504012365179 0.099254632140368809</Translation>
+</Transform>
+</Instance>
+<Instance name="ground-1" uid="ground-1" grounded="true" entityUid="ground*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.098032557750563354 -0.14637253618617552 0.14111851078356499</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="1" b="0.85882352941176465" a="1"/>
+<Diffuse r="0.52941176470588236" g="1" b="0.85882352941176465" a="1"/>
+<Specular r="0.26470588235294118" g="0.5" b="0.42941176470588233" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="prob-1" uid="prob-1" entityUid="prob*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.041010430646235399 0.74112504012365177 -0.0014636556862207017</Translation>
+</Transform>
+</Instance>
+<Instance name="prob-3" uid="prob-3" entityUid="prob*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.23956346131845524 0.74112504012365177 0.19997291996695257</Translation>
+</Transform>
+</Instance>
+<Instance name="prob-4" uid="prob-4" entityUid="prob*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.03956865815575869 0.74112504012365177 0.19853114747647596</Translation>
+</Transform>
+</Instance>
+<Instance name="prob-2" uid="prob-2" entityUid="prob*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.24100523380893207 0.74112504012365177 -2.1883195743947412e-005</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>-0.09999999999999945 0.037499999999999978 -0.099999999999999811</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>prob-1</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>0.099999999999999811 0.037499999999999978 -0.1000000000000051</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>prob-2</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>0.10000000000000508 0.037499999999999978 0.099999999999994107</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>prob-3</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>-0.099999999999994149 0.037499999999999978 0.099999999999999409</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>prob-4</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Body" uid="Body*:*Default" version="217">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="Body.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.6770851235294897</Mass>
+<CenterOfMass>7.0930724953655241e-006 0.0018846637330334798 7.1211476162681184e-006</CenterOfMass>
+<Inertia>0.044741017194321622 0.083704675607994786 0.044740639586266867 -2.5139339739301176e-007 1.6432544316620566e-006 -2.4186764018682889e-007</Inertia>
+</MassProperties>
+<GeometryFile name="Body_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.5" g="0.5" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="ground" uid="ground*:*Default" version="123">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="ground.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2502.0340759613573</Mass>
+<CenterOfMass>-0.00088457080693841441 0.050045058154561201 -0.00084254768269055764</CenterOfMass>
+<Inertia>5212.6483230013482 10421.326498325714 5212.8573883989893 0.11674383358638914 -2.2918867425056622 0.12210686062887206</Inertia>
+</MassProperties>
+<GeometryFile name="ground_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Diffuse r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Specular r="0.49411764705882355" g="0.36862745098039218" b="0.25882352941176467" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="prob" uid="prob*:*Default" version="114">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="prob.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.03171045084717198</Mass>
+<CenterOfMass>0 0.0024999999999999996 0</CenterOfMass>
+<Inertia>1.6169026760094463e-005 3.2205926641659049e-005 1.6169026760094466e-005 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="prob_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0" g="0" b="1" a="1"/>
+<Diffuse r="0" g="0" b="1" a="1"/>
+<Specular r="0" g="0" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

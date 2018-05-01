@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/05/17||13:01:03" using="Simscape Multibody Link Version 4.8" from="SolidWorks 24.4.0"/>
+<ModelUnits mass="kilogram" length="centimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Quad" uid="Quad" version="147">
+<AssemblyFile name="Quad.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="propeller-5" uid="propeller-5" entityUid="propeller*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.073608981895267198 0.018119366059394935 -0.089393741910595015</Translation>
+</Transform>
+</Instance>
+<Instance name="Body-1" uid="Body-1" grounded="true" entityUid="Body*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.026391018104732558 -0.0093806339406050654 0.010606258089410056</Translation>
+</Transform>
+</Instance>
+<Instance name="propeller-2" uid="propeller-2" entityUid="propeller*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.12639101810472667 0.018119366059394931 0.11060625808940945</Translation>
+</Transform>
+</Instance>
+<Instance name="propeller-1" uid="propeller-1" entityUid="propeller*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.12639101810473197 0.018119366059394935 -0.089393741910589727</Translation>
+</Transform>
+</Instance>
+<Instance name="propeller-6" uid="propeller-6" entityUid="propeller*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.073608981895272499 0.018119366059394931 0.11060625808940414</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>-0.099999999999999409 0.037499999999999999 -0.099999999999999784</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>propeller-1</Uid>
+</InstancePath>
+<Position>0 0.0099999999999999985 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident11">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>-0.099999999999999409 0.0275 -0.099999999999999784</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>propeller-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>-0.099999999999994107 0.037499999999999999 0.099999999999999395</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>propeller-2</Uid>
+</InstancePath>
+<Position>0 0.010000000000000002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident13">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>-0.099999999999994107 0.0275 0.099999999999999395</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>propeller-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>0.099999999999999756 0.037499999999999999 -0.10000000000000507</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>propeller-5</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident15">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>0.099999999999999756 0.0275 -0.10000000000000507</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>propeller-5</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>0.10000000000000506 0.037499999999999999 0.09999999999999408</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>propeller-6</Uid>
+</InstancePath>
+<Position>0 0.010000000000000002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident17">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Body-1</Uid>
+</InstancePath>
+<Position>0.10000000000000506 0.0275 0.09999999999999408</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>propeller-6</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Body" uid="Body*:*Default" version="200">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="Body.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.1025165392778518</Mass>
+<CenterOfMass>9.0716619141905151e-006 0.014929371352254497 9.1803741669440783e-006</CenterOfMass>
+<Inertia>0.01491578077782643 0.029438561132429632 0.014915343716871372 -5.5486038568590669e-010 1.6604906295416973e-006 -9.6092282533613156e-010</Inertia>
+</MassProperties>
+<GeometryFile name="Body_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.5" g="0.5" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="propeller" uid="propeller*:*Default" version="145">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="propeller.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0013075166997004155</Mass>
+<CenterOfMass>-2.7185058480526707e-007 0.0049969790795950176 7.302361398113855e-005</CenterOfMass>
+<Inertia>4.4131459325824601e-007 4.4401394966116834e-007 1.57157876833337e-008 -1.1933225765270849e-010 -8.1882536229968857e-012 -9.1649765957273383e-012</Inertia>
+</MassProperties>
+<GeometryFile name="propeller_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.21568627450980393" g="0.61960784313725492" b="1" a="1"/>
+<Diffuse r="0.21568627450980393" g="0.61960784313725492" b="1" a="1"/>
+<Specular r="0.10784313725490197" g="0.30980392156862746" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
